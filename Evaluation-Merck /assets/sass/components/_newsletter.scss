@@ -1,0 +1,132 @@
+.newsletter {
+  position: relative;
+  margin-top: 5%;
+  background-image: url("/assets/img/FILIGRANE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+
+  &__titre {
+    position: absolute;
+    left: 30%;
+  }
+
+  & h4 {
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  & .un {
+    @include font__articles($Libre, 62px, white);
+  }
+
+  & .deux {
+    @include font__articles($Libre, 62px, white);
+    font-style: italic;
+  }
+
+  &__propos {
+    @include font__articles($Libre, 22px, white);
+    line-height: 31px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    width: 37%;
+  }
+}
+
+.newsletter {
+  & .inscription {
+    position: absolute;
+    border: 1px solid #003b5c;
+    width: 15%;
+    height: 70px;
+    top: 70%;
+    left: 40%;
+    background: white;
+
+    box-shadow: 15px 5px 1px #e74832;
+
+    & .inscription__titre {
+      text-align: center;
+      @include font($HK, 20px, $blue);
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .newsletter {
+    &__titre {
+      top: 3%;
+      left: 25%;
+    }
+    &__propos {
+      width: 60%;
+      left: 23%;
+    }
+    & .inscription {
+      left: 43%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    &__titre {
+      top: 20%;
+      left: 30%;
+    }
+    & h4 {
+      display: inline;
+    }
+
+    & .un {
+      @include font__articles($Libre, 30px, white);
+    }
+    & .deux {
+      @include font__articles($Libre, 30px, white);
+    }
+
+    &__propos {
+      @include font__articles($Libre, 20px, white);
+      width: 50%;
+      top: 30%;
+      left: 25%;
+    }
+  }
+  .newsletter {
+    & .inscription {
+      top: 70%;
+      width: 30%;
+      left: 35%;
+    }
+
+    & .inscription__titre {
+      @include font($HK, 5px, $blue);
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .newsletter {
+    width: 120%;
+
+    &__titre {
+      left: 19%;
+      & .un {
+        @include font__articles($Libre, 20px, white);
+      }
+      & .deux {
+        @include font__articles($Libre, 20px, white);
+      }
+    }
+
+    &__propos {
+      @include font__articles($Libre, 15px, white);
+      width: 70%;
+      top: 30%;
+      left: 18%;
+    }
+  }
+}

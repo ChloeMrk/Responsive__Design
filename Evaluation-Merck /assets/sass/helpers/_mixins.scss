@@ -1,0 +1,28 @@
+@mixin font($font, $size, $couleur) {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: $couleur;
+  text-decoration: none;
+  font-size: $size;
+}
+
+@mixin font__articles($font, $size, $couleur) {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $couleur;
+  text-decoration: none;
+  font-size: $size;
+}
+
+@mixin rubrique {
+  border: 1px solid #e5dbd1;
+  box-shadow: 10px 5px 5px #e5dbd1;
+  letter-spacing: 1px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}

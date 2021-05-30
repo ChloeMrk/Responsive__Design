@@ -1,0 +1,200 @@
+.header__main {
+  position: relative;
+}
+
+.header__meteo {
+  align-items: center;
+  display: flex;
+  font-family: $HK;
+
+  .meteo__img {
+    position: absolute;
+    left: 20%;
+    margin-top: 4%;
+    width: 35px;
+  }
+  .meteo__date {
+    position: absolute;
+    @include font($HK, 14px, $blue);
+    left: 22%;
+    margin-top: 4%;
+  }
+  .meteo__temp {
+    position: absolute;
+    @include font($HK, 12px, $grey);
+    margin-top: 5.5%;
+    left: 22%;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 45%;
+    margin-top: 5%;
+  }
+}
+
+.header__nav {
+  .nav {
+    &__propos {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10%;
+      list-style-type: none;
+    }
+
+    &__items {
+      margin-left: 5%;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    &__item {
+      @include font($HK, 14px, $blue);
+    }
+  }
+}
+
+.header__hr {
+  margin-top: 3%;
+  color: #e3dacc;
+}
+
+.header__menu {
+  .nav {
+    &__list {
+      display: flex;
+      justify-content: center;
+      padding: 0% 10%;
+    }
+    &__items {
+      margin-left: 5%;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    &__item {
+      @include font($HK, 14px, $blue);
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .header__meteo {
+    .meteo__img {
+      left: 12%;
+    }
+
+    .meteo__date {
+      left: 15%;
+    }
+
+    .meteo__temp {
+      left: 15%;
+    }
+    .header__logo {
+      left: 40%;
+    }
+  }
+
+  .header__nav {
+    .nav {
+      &__propos {
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__meteo {
+    .meteo__img {
+      margin-top: 7%;
+      left: 3%;
+    }
+    .meteo__date {
+      margin-top: 7%;
+      left: 8%;
+    }
+    .meteo__temp {
+      margin-top: 10%;
+      left: 8%;
+    }
+
+    .header__logo {
+      margin-top: 10%;
+      left: 35%;
+    }
+   
+  }
+
+  .header__nav {
+    .nav {
+      &__propos {
+        margin-right: 3%;
+      }
+
+      &__items {
+        margin-left: 2%;
+      }
+    }
+  }
+
+  .header__hr {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__main {
+    .meteo__img {
+      width: 8%;
+      
+    }
+
+    .meteo__date {
+      @include font($HK, 10px, $blue);
+      left: 11%;
+    
+    }
+
+    .meteo__temp {
+      @include font($HK, 8px, $grey);
+      margin-top:11%;
+      left: 11%;
+    }
+
+    .header__logo {
+      width: 30%;
+      left:43%;
+    }
+
+    .header__hr{
+      margin-left: 10%;
+    }
+  }
+
+  .header__nav {
+    .nav {
+      &__propos {
+        margin-right:-13%;
+      }
+
+      &__item {
+        @include font($HK, 8px, $blue);
+        & img {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  .header__menu{
+    .nav{
+      &__item {
+        @include font($HK, 10px, $blue);
+        margin-left: 25%;
+      }
+    }
+
+  }
+}
