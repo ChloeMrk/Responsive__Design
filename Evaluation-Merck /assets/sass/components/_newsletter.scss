@@ -113,7 +113,7 @@
     width: 120%;
 
     &__titre {
-      left: 19%;
+      left: 21%;
       & .un {
         @include font__articles($Libre, 20px, white);
       }
@@ -127,6 +127,13 @@
       width: 70%;
       top: 30%;
       left: 18%;
+    }
+  }
+
+  .newsletter{
+    & .inscription{
+      width: 40%;
+      left:30%;
     }
   }
 }

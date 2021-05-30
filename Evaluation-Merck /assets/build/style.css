@@ -350,6 +350,9 @@ body {
   .avant__article .btn__avant {
     margin-left: 25%;
   }
+  .avant__article .btn__avant img {
+    width: 30%;
+  }
   .avant__article .avant__lifestyle__texte {
     width: 30%;
   }
@@ -725,7 +728,7 @@ body {
     width: 120%;
   }
   .newsletter__titre {
-    left: 19%;
+    left: 21%;
   }
   .newsletter__titre .un {
     font-family: Libre Baskerville;
@@ -756,6 +759,11 @@ body {
     width: 70%;
     top: 30%;
     left: 18%;
+  }
+
+  .newsletter .inscription {
+    width: 40%;
+    left: 30%;
   }
 }
 .footer__main {
@@ -887,6 +895,65 @@ footer .p2 {
     color: white;
     text-decoration: none;
     font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .footer__main {
+    width: 110%;
+  }
+  .footer__main img {
+    width: 10%;
+    margin-left: 5%;
+  }
+  .footer__main h5 {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .footer__main p {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+    text-align: left;
+  }
+
+  .footer__main {
+    justify-content: space-between;
+    height: 300px;
+  }
+  .footer__main .footer__categories {
+    margin-top: 20%;
+  }
+  .footer__main .footer__propos {
+    margin-top: 20%;
+  }
+  .footer__main .footer__newsletter {
+    margin-top: 20%;
+  }
+  .footer__main .footer__social {
+    margin-top: 20%;
+  }
+
+  .footer__newsletter .footer.rejoindre {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 5px;
+  }
+
+  footer {
+    width: 120%;
   }
 }
 

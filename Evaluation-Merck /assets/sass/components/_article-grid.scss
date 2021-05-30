@@ -152,8 +152,6 @@
       }
     }
   }
-
- 
 }
 
 @media (max-width: 375px) {
@@ -166,7 +164,6 @@
     & .ligne__left {
       margin-top: -12%;
       width: 35%;
-
     }
     & .ligne__right {
       margin-top: -12%;
@@ -178,23 +175,21 @@
       margin-left: 38%;
     }
 
-    & .sous__categories{
+    & .sous__categories {
       @include font($HK, 8px, #5d534f);
     }
   }
   .articles {
     .article__grid {
       margin-left: 35%;
-      & .article__item{
-
-        & img{
-          width:100%;
+      & .article__item {
+        & img {
+          width: 100%;
         }
-        
       }
 
-      & .article__theme{
-        & a{
+      & .article__theme {
+        & a {
           @include font($HK, 8px, $blue);
         }
 
@@ -203,11 +198,10 @@
         }
       }
 
-      & .article__titre{
+      & .article__titre {
         @include font__articles($Libre, 12px, $blue);
         text-align: left;
       }
-      
     }
   }
 }

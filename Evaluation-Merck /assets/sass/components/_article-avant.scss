@@ -33,6 +33,7 @@
 
     & .btn__avant {
       margin-left: 38%;
+      
     }
   }
 }
@@ -128,6 +129,10 @@
 
       & .btn__avant{
         margin-left: 25%;
+
+        & img{
+          width: 30%;
+        }
       }
 
      
