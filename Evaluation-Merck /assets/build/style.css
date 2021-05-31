@@ -223,7 +223,7 @@ body {
   display: inline-flex;
 }
 .avant__theme a {
-  margin-left: 40%;
+  margin-left: 50%;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: 600;
@@ -232,8 +232,8 @@ body {
   text-decoration: none;
   font-size: 10px;
 }
-.avant__theme p {
-  margin-top: 0%;
+.avant__theme .a__sous_categorie {
+  margin-left: 5%;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: 600;
@@ -281,6 +281,10 @@ body {
 }
 .avant .avant__automobile button {
   margin-left: 58%;
+}
+
+.avant__theme__lifestyle a {
+  margin-left: 39%;
 }
 
 @media (max-width: 1366px) {
@@ -401,8 +405,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.articles .sous__categories p {
+.articles .sous__categories a {
+  margin-top: 0.5%;
   margin-left: 2%;
+}
+.articles .sous__categories .a__sous_categorie {
+  text-decoration: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #5D534F;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 2%;
 }
 .articles .btn__article {
   margin-left: 90%;
@@ -426,6 +442,16 @@ body {
   font-weight: 600;
   text-align: center;
   color: #003B5C;
+  text-decoration: none;
+  font-size: 12px;
+}
+.articles .article__grid .article__theme .a__sous_categorie {
+  text-decoration: none;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #5D534F;
   text-decoration: none;
   font-size: 12px;
 }
@@ -547,6 +573,8 @@ body {
     color: #5d534f;
     text-decoration: none;
     font-size: 8px;
+    margin-left: 15%;
+    margin-top: 2%;
   }
 
   .articles .article__grid {
@@ -564,7 +592,7 @@ body {
     text-decoration: none;
     font-size: 8px;
   }
-  .articles .article__grid .article__theme p {
+  .articles .article__grid .article__theme .a__sous_categorie {
     font-family: HK Grotesk;
     font-style: normal;
     font-weight: 600;
@@ -771,7 +799,7 @@ body {
   margin-top: 5%;
   background: #e74832;
   width: auto;
-  height: 390px;
+  height: 320px;
 }
 .footer__main img {
   margin: 5%;
@@ -799,6 +827,9 @@ body {
 .footer__main {
   display: flex;
   justify-content: space-around;
+}
+.footer__main .footer__logo {
+  width: 10%;
 }
 .footer__main .footer__categories {
   margin-top: 4%;

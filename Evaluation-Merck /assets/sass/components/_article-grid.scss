@@ -28,8 +28,15 @@
     display: flex;
     justify-content: center;
 
-    & p {
+    & a {
+      margin-top: 0.5%;
       margin-left: 2%;
+    }
+
+    & .a__sous_categorie {
+      text-decoration: none;
+      @include font($HK, 12px, $grey);
+      margin-right: 2%;
     }
   }
 
@@ -52,6 +59,11 @@
       & a {
         margin-bottom: 0;
         @include font($HK, 12px, $blue);
+      }
+
+      & .a__sous_categorie {
+        text-decoration: none;
+        @include font($HK, 12px, $grey);
       }
 
       & p {
@@ -177,6 +189,8 @@
 
     & .sous__categories {
       @include font($HK, 8px, #5d534f);
+      margin-left: 15%;
+      margin-top: 2%;
     }
   }
   .articles {
@@ -189,13 +203,16 @@
       }
 
       & .article__theme {
+       
         & a {
           @include font($HK, 8px, $blue);
         }
-
-        & p {
+        & .a__sous_categorie {
           @include font($HK, 8px, $grey);
+         
         }
+
+       
       }
 
       & .article__titre {

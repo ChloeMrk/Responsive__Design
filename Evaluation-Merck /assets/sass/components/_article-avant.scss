@@ -3,18 +3,17 @@
   margin-top: 2%;
   margin-left: 15%;
   display: flex;
- 
+
   &__theme {
     width: 57%;
     background: white;
     display: inline-flex;
     & a {
-      margin-left: 40%;
+      margin-left: 50%;
       @include font($HK, 10px, $blue);
     }
-    & p {
-      margin-top: 0%;
-
+    & .a__sous_categorie {
+      margin-left: 5%;
       @include font($HK, 10px, $grey);
     }
   }
@@ -33,115 +32,113 @@
 
     & .btn__avant {
       margin-left: 38%;
-      
     }
   }
 }
 
-
-.avant{
-  & .avant__automobile{
-   
-    & h4{
-      margin-left:25%;
+.avant {
+  & .avant__automobile {
+    & h4 {
+      margin-left: 25%;
       width: 90%;
     }
     & p {
       margin-left: 20%;
-      
+
       width: 100%;
     }
 
-    & button{
+    & button {
       margin-left: 58%;
     }
   }
 }
 
-@media(max-width:1366px){
-  .avant{
-    margin-left: 2%;
-    
-    &__lifestyle{
-      margin-left: 2%;
+.avant {
+  &__theme__lifestyle {
+    & a {
+      margin-left: 39%;
     }
-
-    &__theme__lifestyle{
-      width: 100%;
-    }
-
-    &__lifestyle__texte{
-      width:100%;
-    }
-    
   }
 }
 
+@media (max-width: 1366px) {
+  .avant {
+    margin-left: 2%;
 
-@media(max-width:768px){
-  .avant{
-    display:block;
-    margin-left:2%;
-
-    &__theme{
-      width: 70%;
+    &__lifestyle {
+      margin-left: 2%;
     }
 
+    &__theme__lifestyle {
+      width: 100%;
+    }
+
+    &__lifestyle__texte {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .avant {
+    display: block;
+    margin-left: 2%;
+
+    &__theme {
+      width: 70%;
+    }
   }
 
-  .avant{
-    .avant__lifestyle{
+  .avant {
+    .avant__lifestyle {
       margin-left: 15%;
     }
 
-    & .avant__lifestyle__texte{
-      width:80%;
+    & .avant__lifestyle__texte {
+      width: 80%;
       margin-left: -2%;
     }
   }
 }
 
-@media(max-width:375px){
-  .avant{
-   margin-left: 15%;
-    & .avant__automobile{
-      & img{
+@media (max-width: 375px) {
+  .avant {
+    margin-left: 15%;
+    & .avant__automobile {
+      & img {
         width: 100%;
       }
     }
 
-    & .avant__lifestyle{
-      & img{
+    & .avant__lifestyle {
+      & img {
         width: 100%;
       }
       margin-left: 5%;
     }
 
-    &__article{
+    &__article {
       & h4 {
         @include font($Libre, 24px, $blue);
-        margin-left:4%;
+        margin-left: 4%;
       }
       & p {
         margin-left: 4%;
         @include font($Libre, 10px, $grey);
       }
 
-      & .btn__avant{
+      & .btn__avant {
         margin-left: 25%;
 
-        & img{
+        & img {
           width: 30%;
         }
       }
 
-     
-      .avant__lifestyle__texte{
+      .avant__lifestyle__texte {
         width: 30%;
-        
       }
     }
   }
-
-
 }

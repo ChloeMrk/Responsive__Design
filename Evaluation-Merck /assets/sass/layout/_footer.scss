@@ -3,7 +3,7 @@
   margin-top: 5%;
   background: #e74832;
   width: auto;
-  height: 390px;
+  height: 320px;
 
   & img {
     margin: 5%;
@@ -22,6 +22,10 @@
 .footer__main {
   display: flex;
   justify-content: space-around;
+
+  .footer__logo{
+    width: 10%;
+  }
 
   .footer__categories {
     margin-top: 4%;
